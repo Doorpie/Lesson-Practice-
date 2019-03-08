@@ -1,1 +1,5 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.home-page {
+  height: 900px;
+  background: url(/nasha-pizza.by/img/bg1.jpg) 50% 100% no-repeat, url(/nasha-pizza.by/img/bg_repeat1.jpg) 50% 0% repeat-y;
+}
+/*# sourceMappingURL=style.css.map */
