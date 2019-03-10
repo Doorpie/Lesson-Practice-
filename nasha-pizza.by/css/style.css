@@ -1,4 +1,80 @@
+.wrap {
+  width: 1400px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+.header-top__call-order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 23px 30px;
+}
+
+.header-top__working-hours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 20px;
+  padding-top: 7px;
+}
+
+.call-order__phone-link {
+  text-decoration: none;
+  font: 600 23px/1.4em Source Sans Pro;
+  color: #fcb800;
+}
+
+.call-order__text-link {
+  text-decoration: none;
+  color: #fff;
+  font: 300 15px/1.4em Source Sans Pro;
+  background: url(/nasha-pizza.by/img/header-top/phone.png) 8% 100% no-repeat;
+  padding: 4px 0 0 47px;
+}
+
+.call-order__text-link:hover {
+  color: #fcb800;
+}
+
+.working-hours__top, .working-hours__bottom {
+  color: #fff;
+  font: 300 15px/1.4em Source Sans Pro;
+}
+
+.working-hours__hours {
+  font: 600 23px/1.4em Source Sans Pro;
+  color: #fcb800;
+}
+
 .home-page {
+  font-size: 16px;
+  font-family: 'Source Sans Pro', 'sans-serif';
+  letter-spacing: 1.3px;
+  color: #282828;
+  overflow: show;
   height: 900px;
   background: url(/nasha-pizza.by/img/bg1.jpg) 50% 100% no-repeat, url(/nasha-pizza.by/img/bg_repeat1.jpg) 50% 0% repeat-y;
 }
