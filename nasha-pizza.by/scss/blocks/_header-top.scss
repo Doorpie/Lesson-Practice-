@@ -15,23 +15,40 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-left: 20px;
-    padding-top: 7px;
+    margin-right: 162px;
+    padding: 4px 0 0 20px;
+  }
+
+  &__logo{
+    margin: -5px 354px 0 0;
+  }
+
+  &__basket-bonus{
+    margin-right: 31px;
+  }
+
+  &__account{
+    margin-top: -5px;
   }
 }
 .call-order{
   &__phone-link{
       text-decoration: none;
-       font: 600 23px/1.4em Source Sans Pro;
-       color: $color-yellow;
+      color: $color-yellow;
+      font: 600 23px/1.4em Source Sans Pro;
+  }
+
+  &__phone-link:hover{
+    text-decoration: underline;
   }
 
   &__text-link{
     text-decoration: none;
-    color: #fff;
-    font: 300 15px/1.4em Source Sans Pro;
+    color: $color-gray;
+    font: 15.8px/1.4em Source Sans Pro;
+    letter-spacing: 0.7px;
     background: url(/nasha-pizza.by/img/header-top/phone.png) 8% 100% no-repeat;
-    padding: 4px 0 0 47px;
+    padding: 3px 0 0 47px;
   }
 
   &__text-link:hover{
@@ -39,15 +56,106 @@
   }
 }
 
-  .working-hours{
-    &__top, &__bottom{
-      color: #fff;
-      font: 300 15px/1.4em Source Sans Pro;
-    }
+.working-hours{
+  &__top{
+     margin-bottom: -2px;
+  }
 
-    &__hours{
-      font: 600 23px/1.4em Source Sans Pro;
-      color: $color-yellow;
-    }
+   &__top, &__bottom{
+     color: $color-gray;
+     font: 15.8px/1.4em Source Sans Pro;
+     letter-spacing: 0.7px;
+   }
 
+   &__hours{
+    font: 600 23px/1.4em Source Sans Pro;
+    letter-spacing: 1.5px;
+    color: $color-yellow;
+  }
+}
+
+.basket-bonus__basket{
+  display: block;
+  position: relative;
+  text-decoration: none;
+  color: $color-gray;
+  font: lighter 15px/1.4em Source Sans Pro;
+}
+
+.basket{
+  &__img{
+    position: absolute;
+    top: 0;
+    left: -65px;
+  }
+
+  &__number{
+    width: 24px;
+    height: 24px;
+    background: $color-yellow;
+    text-align: center;
+    font: bold 13px/1.9em Source Sans Pro;
+    color: #282828;
+    position: absolute;
+    top: 20px;
+    left: -49px;
+    padding-left: 2px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+  }
+
+  &__text{
+    margin-top: -7px;
+    margin-left: -1px;
+    color: $color-gray;
+    font: 15.8px Source Sans Pro;
+    letter-spacing: 0.6px;
+  }
+}
+
+.basket-bonus__bonus{
+  position: relative;
+  margin-top: 5px;
+  margin-left: -65px;
+
+}
+
+.bonus{
+  &__text{
+    color: $color-gray;
+    font: 15.8px Source Sans Pro;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+  }
+
+  &__text::after{
+    content: '';
+    background: url(/nasha-pizza.by/img/header-top/line.png) 0% 0% repeat-x;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+  }
+  &__text:hover::after{
+    display: none;
+  }
+
+  &__number{
+    color: $color-yellow;
+    font: 700 23px/1.4em Source Sans Pro; 
+  }
+}
+
+.account__link{
+  display: block;
+  text-decoration: none;
+  color: $color-gray;
+  background: url(/nasha-pizza.by/img/header-top/account.png) 0% 50% no-repeat;
+  padding-left: 28px;
+  font: 15.8px Source Sans Pro;
+  letter-spacing: 0.6px;
 }
