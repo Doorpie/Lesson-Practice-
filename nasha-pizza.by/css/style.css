@@ -9,6 +9,7 @@ html {
 }
 
 .home-page {
+  margin: 0;
   font-size: 16px;
   font-family: 'Source Sans Pro', 'sans-serif';
   letter-spacing: 1.3px;
@@ -23,14 +24,56 @@ html {
   margin: 0 auto;
 }
 
+@media (max-width: 1199px) {
+  .wrap {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
 .header__top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px;
+  position: relative;
+  padding: 17px 18px 10px;
+}
+
+@media (max-width: 992px) {
+  .header__top {
+    padding: 5px;
+    min-height: 51px;
+  }
+}
+
+.header__wp-l {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__wp-r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-top__call-order {
@@ -44,6 +87,12 @@ html {
   padding: 23px 30px;
 }
 
+@media (max-width: 992px) {
+  .header-top .header-top__call-order {
+    padding: 0;
+  }
+}
+
 .header-top__working-hours {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,26 +104,55 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 161px;
-  padding: 4px 0 0 20px;
+  padding: 6px 0 0 20px;
 }
 
 .header-top__logo {
-  margin: -5px 354px 0 0;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  margin-left: -62px;
+}
+
+@media (max-width: 1199px) {
+  .header-top .header-top__logo {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-top .header-top__logo {
+    top: 5px;
+    left: 15px;
+  }
 }
 
 .header-top__basket-bonus {
+  padding-top: 2px;
   margin-right: 31px;
 }
 
 .header-top__account {
   margin-top: -5px;
+  margin-right: 32px;
 }
 
 .call-order__phone-link {
   text-decoration: none;
   color: #fcb800;
-  font: 600 23px/1.4em Source Sans Pro;
+  font: 600 24px/1.4em Source Sans Pro;
+  letter-spacing: 0.85px;
+}
+
+@media (max-width: 992px) {
+  .call-order .call-order__phone-link {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    font-size: 14.8px;
+    letter-spacing: 0.95px;
+    margin-left: -60.5px;
+  }
 }
 
 .call-order__phone-link:hover {
@@ -94,8 +172,21 @@ html {
   color: #fcb800;
 }
 
+@media (max-width: 992px) {
+  .call-order__text-link {
+    display: none;
+  }
+}
+
 .working-hours__top {
+  margin-left: -1px;
   margin-bottom: -2px;
+}
+
+@media (max-width: 992px) {
+  .working-hours .working-hours__top {
+    display: none;
+  }
 }
 
 .working-hours__top, .working-hours__bottom {
@@ -104,10 +195,38 @@ html {
   letter-spacing: 0.7px;
 }
 
+@media (max-width: 992px) {
+  .working-hours .working-hours__bottom {
+    position: absolute;
+    top: 22.5px;
+    left: 50%;
+    color: #fff;
+    font-size: 14.8px;
+    font-weight: 300;
+    letter-spacing: 0;
+    margin-left: -50px;
+  }
+}
+
 .working-hours__hours {
   font: 600 23px/1.4em Source Sans Pro;
   letter-spacing: 1.5px;
   color: #fcb800;
+}
+
+@media (max-width: 992px) {
+  .working-hours__hours {
+    color: #fff;
+    font-size: 13.8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+}
+
+@media (max-width: 992px) {
+  .logo__img {
+    width: 50px;
+  }
 }
 
 .basket-bonus__basket {
@@ -118,10 +237,26 @@ html {
   font: lighter 15px/1.4em Source Sans Pro;
 }
 
+@media (max-width: 992px) {
+  .basket-bonus__basket {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
 .basket__img {
   position: absolute;
   top: 0;
   left: -65px;
+}
+
+@media (max-width: 992px) {
+  .basket .basket__img {
+    position: absolute;
+    margin: 11px 0 0 23px;
+    width: 24px;
+  }
 }
 
 .basket__number {
@@ -142,12 +277,30 @@ html {
   -o-border-radius: 100px;
 }
 
+@media (max-width: 992px) {
+  .basket .basket__number {
+    position: absolute;
+    font-size: 10px;
+    line-height: 1.7em;
+    top: 25px;
+    left: -31px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
 .basket__text {
   margin-top: -7px;
   margin-left: -1px;
   color: #E9E9EA;
   font: 15.8px Source Sans Pro;
   letter-spacing: 0.6px;
+}
+
+@media (max-width: 992px) {
+  .basket .basket__text {
+    display: none;
+  }
 }
 
 .basket-bonus__bonus {
@@ -177,19 +330,44 @@ html {
   display: none;
 }
 
+@media (max-width: 992px) {
+  .bonus .bonus__text {
+    display: none;
+  }
+}
+
 .bonus__number {
   color: #fcb800;
   font: 700 23px/1.4em Source Sans Pro;
 }
 
 .account__link {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-decoration: none;
   color: #E9E9EA;
-  background: url(/nasha-pizza.by/img/header-top/account.png) 0% 50% no-repeat;
-  padding-left: 28px;
   font: 15.8px Source Sans Pro;
   letter-spacing: 0.6px;
+}
+
+.account__img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 11px;
+}
+
+@media (max-width: 992px) {
+  .account__img {
+    margin: 5px 23px 0 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .account__text {
+    display: none;
+  }
 }
 
 .header__header-nav {
