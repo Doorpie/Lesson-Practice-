@@ -16,7 +16,7 @@ html {
   color: #282828;
   overflow: show;
   height: 900px;
-  background: url(/nasha-pizza.by/img/bg1.jpg) 50% 100% no-repeat, url(/nasha-pizza.by/img/bg_repeat1.jpg) 50% 0% repeat-y;
+  background: url(../img/bg1.jpg) 50% 100% no-repeat, url(../img/bg_repeat1.jpg) 50% 0% repeat-y;
 }
 
 .wrap {
@@ -52,7 +52,7 @@ html {
   }
 }
 
-.header__wp-l {
+.header-top__wp-l {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,7 +64,7 @@ html {
           align-items: center;
 }
 
-.header__wp-r {
+.header-top__wp-r {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,7 +150,7 @@ html {
   color: #E9E9EA;
   font: 15.8px/1.4em Source Sans Pro;
   letter-spacing: 0.7px;
-  background: url(/nasha-pizza.by/img/header-top/phone.png) 8% 100% no-repeat;
+  background: url(../img/header-top/phone.png) 8% 100% no-repeat;
   padding: 3px 0 0 47px;
 }
 
@@ -300,7 +300,7 @@ html {
 
 .bonus__text::after {
   content: '';
-  background: url(/nasha-pizza.by/img/header-top/line.png) 0% 0% repeat-x;
+  background: url(../img/header-top/line.png) 0% 0% repeat-x;
   position: absolute;
   bottom: 0;
   left: 0;

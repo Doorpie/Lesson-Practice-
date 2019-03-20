@@ -13,19 +13,19 @@
   }
 }
 
-.header__wp-l{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center
-}
-
-.header__wp-r{
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
 .header-top{
+  &__wp-l{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center
+  }
+  
+  &__wp-r{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
   &__call-order{
     display: flex;
     flex-direction: column;
@@ -93,7 +93,7 @@
     color: $color-gray;
     font: 15.8px/1.4em Source Sans Pro;
     letter-spacing: 0.7px;
-    background: url(/nasha-pizza.by/img/header-top/phone.png) 8% 100% no-repeat;
+    background: url(../img/header-top/phone.png) 8% 100% no-repeat;
     padding: 3px 0 0 47px;
   }
 
@@ -260,7 +260,7 @@
 
   &__text::after{
     content: '';
-    background: url(/nasha-pizza.by/img/header-top/line.png) 0% 0% repeat-x;
+    background: url(../img/header-top/line.png) 0% 0% repeat-x;
     position: absolute;
     bottom: 0;
     left: 0;
