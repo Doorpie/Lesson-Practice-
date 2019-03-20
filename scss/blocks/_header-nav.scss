@@ -27,18 +27,18 @@
   &__nav-link{
     text-decoration: none;   
     color: $color-gray;
-  }
 
-  &__nav-link:hover{
-    color: $color-yellow;
-  }
-
-  &__nav-link:hover > .nav-link__img{
-    display: none;
-  }
-
-  &__nav-link:hover > .nav-link__img--active{
-    display: inline;
+    &:hover{
+      color: $color-yellow;
+    }
+  
+    &:hover > .nav-link__img{
+      display: none;
+    }
+  
+    &:hover > .nav-link__img--active{
+      display: inline;
+    }
   }
 }
 

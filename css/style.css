@@ -15,8 +15,12 @@ html {
   letter-spacing: 1.3px;
   color: #282828;
   overflow: show;
-  height: 900px;
-  background: url(../img/bg1.jpg) 50% 100% no-repeat, url(../img/bg_repeat1.jpg) 50% 0% repeat-y;
+  background: url(../img/bg.jpg) 50% 100% no-repeat, url(../img/bg_repeat.jpg) 50% 0% repeat-y;
+}
+
+.main {
+  padding-top: 50px;
+  padding-bottom: 102px;
 }
 
 .wrap {
@@ -435,5 +439,13 @@ html {
   font: 18px Source Sans Pro;
   letter-spacing: 1px;
   padding-top: 5px;
+}
+
+.main__slider {
+  padding: 73px 135px;
+  max-width: 1400px;
+  height: 550px;
+  background: url(/img/slider/slider_bg1.jpg) no-repeat;
+  background-size: contain;
 }
 /*# sourceMappingURL=style.css.map */

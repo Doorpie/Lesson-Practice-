@@ -82,12 +82,12 @@
     color: $color-yellow;
     font: 600 24px/1.4em Source Sans Pro;
     letter-spacing: 0.85px;
-  }
 
-  &__phone-link:hover{
-    text-decoration: underline;
+    &:hover{
+     text-decoration: underline;
+    }
   }
-
+ 
   &__text-link{
     text-decoration: none;
     color: $color-gray;
@@ -95,11 +95,11 @@
     letter-spacing: 0.7px;
     background: url(../img/header-top/phone.png) 8% 100% no-repeat;
     padding: 3px 0 0 47px;
-  }
 
-  &__text-link:hover{
-    color: $color-yellow;
-  }
+    &:hover{
+      color: $color-yellow;
+    }
+  } 
 }
 
 @media (max-width: 992px){
@@ -256,20 +256,20 @@
     font: 15.8px Source Sans Pro;
     letter-spacing: 0.5px;
     text-decoration: none;
-  }
 
-  &__text::after{
-    content: '';
-    background: url(../img/header-top/line.png) 0% 0% repeat-x;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-  }
-
-  &__text:hover::after{
-    display: none;
+    &::after{
+      content: '';
+      background: url(../img/header-top/line.png) 0% 0% repeat-x;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+    }
+  
+    &:hover::after{
+      display: none;
+    }
   }
 
   &__number{
