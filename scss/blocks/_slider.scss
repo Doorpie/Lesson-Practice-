@@ -1,7 +1,35 @@
 .main__slider{
-  padding: 73px 135px;
+  position: relative;
+  padding: 62px 132px;
   max-width: 1400px;
   height: 550px;
-  background: url(/img/slider/slider_bg1.jpg) no-repeat;
+  background: url(../img/slider/slider_bg1.jpg) no-repeat;
   background-size: contain;
+}
+
+.slider{
+  &__bazilik{
+    position: absolute;
+    top: -65px;
+    left: -97px;
+  }
+
+  &__title{
+    font: 600 40px/1.4em  Source Sans Pro;
+    color: $color-yellow;
+  }
+
+  &__text{
+    padding-top: 6px;
+    font: 24.8px/1.4em Source Sans Pro;
+    letter-spacing: 1.15px;
+    color: $color-gray;
+  }
+
+  &__button{
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-top: 55px;
+    padding: 12.5px 40px;
+  }
 }
