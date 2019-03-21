@@ -487,6 +487,14 @@ html {
   }
 }
 
+@media (max-width: 428px) {
+  .main__slider {
+    background: url(../img/slider/slider_bg2.jpg) no-repeat;
+    padding: 20px 15px;
+    background-size: 100%;
+  }
+}
+
 .slider__bazilik {
   position: absolute;
   top: -65px;
@@ -533,12 +541,6 @@ html {
     font-size: 16px;
     margin-top: 19px;
     padding: 10.5px 65px;
-  }
-}
-
-@media (max-width: 425px) {
-  .slider .slider__title {
-    padding-right: 80px;
   }
 }
 
