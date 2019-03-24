@@ -32,16 +32,6 @@
     border-radius: 5px;
   }
 
-  &__icon{
-    position: absolute;
-    top: 20px;
-    left: 19px;
-    
-    &-img{
-      margin-right: 5px;
-    }
-  }
-
   &__block-info{
     background: rgba(0, 0, 0, 0.7);
     text-align: center;
@@ -70,82 +60,89 @@
       display: none;
     }
   }
-}
 
-.block-image{
-  &__link{
-    position: relative;
-  }
-
-  &__img{
-    border-radius: 5px 5px 0 0;
-  }
-
-  &__weight{
-    position: absolute;
-    color: #000;
-    background: #fff;
-    border-radius: 5px;
-    font: 18px/1.3em Source Sans Pro;
-    left: 10px;
-    bottom: 10px;
-  }
-
-}
-
-
-
-
-.block-info{
-  &__type{
-    color: #fff;
-    font: 600 20px/1.3em Source Sans Pro;
-    padding-top: 9px;
-  }
-
-  &__name{
-    color:$color-yellow;
-    font: 600 24px/1.3em Source Sans Pro;
-  }
-
-  &__buy{
-    padding: 27px 10px 15px 10px;
-  }
-
-  &__button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 302px;
-    padding: 12.5px 0;
-    color: #fff;
-    font: 600 22.8px/1.3em Source Sans Pro;
-  
-    &:hover > .block-info__button-img{
-     display: none;
-     
+  .block-image{
+    &__link{
+      position: relative;
     }
 
-    &:hover > .block-info__button-img--active{
-      display: inline-block;
-     }
+    &__icon{
+      position: absolute;
+      top: -261px;
+      left: 19px;
+      
+      &-img{
+        margin-right: 5px;
+      }
+    }
+
+    &__img{
+      border-radius: 5px 5px 0 0;
+    }
+
+    &__weight{
+      position: absolute;
+      color: #424242;
+      background: #fff;
+      padding: 6px 7px;
+      border-radius: 5px;
+      font: 600 17px/1.3em Source Sans Pro;
+      letter-spacing: 1.3px;
+      left: 24px;
+      bottom: 25px;
+    }
   }
 
-  &__button-img{
-  margin-left: 32px;
+  .block-info{
+    &__type{
+      color: #fff;
+      font: 600 20px/1.3em Source Sans Pro;
+      padding-top: 9px;
+    }
+
+    &__name{
+      color:$color-yellow;
+      font: 600 24px/1.3em Source Sans Pro;
+    }
+
+    &__buy{
+      padding: 27px 10px 15px 10px;
+    }
+
+    &__button{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 302px;
+      padding: 12.5px 0;
+      color: #fff;
+      font: 600 22.8px/1.3em Source Sans Pro;
+    
+      &:hover > .block-info__button-img{
+      display: none;
+      
+      }
+
+      &:hover > .block-info__button-img--active{
+        display: inline-block;
+      }
+    }
+
+    &__button-img{
+    margin-left: 32px;
+    }
+
+    &__button-img--active{
+      display: none;
+    }
   }
 
-  &__button-img--active{
-    display: none;
+  .fast-order__links{
+    color: #fff;
+    font: 17.4px/1.3em Source Sans Pro;
+
+    &:hover{
+      text-decoration: none;
+    }
   }
 }
-
-.fast-order__links{
-  color: #fff;
-  font: 17.4px/1.3em Source Sans Pro;
-
-  &:hover{
-    text-decoration: none;
-  }
-}
-
