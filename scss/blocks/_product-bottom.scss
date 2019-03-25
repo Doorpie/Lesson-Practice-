@@ -29,7 +29,7 @@
   &__block-info{
     align-self: stretch;
     background: rgba(0, 0, 0, 0.7);
-    width: 469px;
+    max-width: 469px;
     max-height: 415px;
     border-radius: 0 5px 5px 0;
   }
@@ -65,9 +65,10 @@
     &__button-link{
       margin-left: -32px;
       width: 302px;
-      padding: 12.5px 0;
+      padding: 10px 0;
       color: #fff;
-      font: 600 22.8px/1.3em Source Sans Pro;
+      font: 600 23.8px/1.6em Source Sans Pro;
+      letter-spacing: 1.15px;
       text-transform: uppercase;
     }
   }

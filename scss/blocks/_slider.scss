@@ -37,6 +37,10 @@
     left: -97px;
   }
 
+  &__bazilik--bottom{
+    display: none;
+  }
+
   &__title{
     font: 600 40px/1.4em  Source Sans Pro;
     color: $color-yellow;

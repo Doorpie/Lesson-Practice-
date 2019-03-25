@@ -13,8 +13,9 @@ html {
     letter-spacing: 1.3px;
     color: #282828;
     overflow: show;
-    background: url(../img/bg.jpg) 50% 100% no-repeat, url(../img/bg_repeat.jpg) 50% 0% repeat-y;
-    // background-size: 100% auto; 
+    background-color: #000;
+    background: url(../img/bg1.jpg) 50% 100% no-repeat, url(../img/bg_repeat.jpg) 50% 0% repeat-y;
+    background-size: 100% auto; 
   }
 
 .main{

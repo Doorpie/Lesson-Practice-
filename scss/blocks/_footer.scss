@@ -1,0 +1,153 @@
+
+.footer{
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.footer__list{
+  
+  background: url(/img/footer/footer.png) 0 0 repeat-x;
+  background-size: contain;
+  margin: 94px auto 0 auto;  
+  padding: 10px 10px 92px 10px;
+  display: flex;
+}
+
+.footer__item{
+  margin-right: 50px;
+
+  &:nth-child(4){
+    margin-right: 20px;
+  }
+}
+
+.footer-menu{
+  &__list{
+    list-style-type: none;
+    margin-top: 6px;
+  }
+
+  &__item{
+    margin-bottom: 10px;
+
+    &:nth-child(5) > .footer-menu__link{
+      color: $color-yellow;
+    }
+  }
+
+  &__link{
+    text-decoration: none;
+    color:$color-gray;
+    font: 16px/1.4em Source Sans Pro;
+    letter-spacing: 1.1px;
+    transition: 0.2s ease-out;
+
+    &:hover{
+      text-decoration: underline;
+      color: $color-yellow;
+    }
+  }
+}
+
+.card-pay{
+  &__title{
+    color:$color-gray;
+    font: 16px/1.4em Source Sans Pro;
+    letter-spacing: 0.5px;
+    padding: 6px 7px 0 7px;
+  }
+
+  &_list{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 19px 7px;
+    max-width: 150px;
+  }
+
+  &__item{
+    margin: 0 16px 11px 0;
+  }
+}
+
+.footer-logo{
+  &__block-image{
+    padding-left: 83px;
+  }
+
+  &__block-icon{
+    padding: 9px 0 0 111px;
+  }
+
+  &__link{
+    text-decoration: none;
+  }
+
+  &__social{
+    margin-right: 12px;
+  }
+}
+
+.footer-info{
+  &__block-phone{
+    padding: 7px 0 0 72px;
+  }
+
+  &__phone{
+    text-decoration: none;
+    color: $color-yellow;
+    font: 600 20px/1.3em Source Sans Pro;
+    letter-spacing: 1.55px;
+  }
+
+  &__phone-text{
+    padding-top: 2px;
+    color: $color-gray;
+    font: 600 15px/1.3em Source Sans Pro;
+    letter-spacing: 0.6px;
+  }
+
+  &__city{
+    padding: 20px 0 0 72px;
+    color: $color-gray;
+    font: 600 15px/1.3em Source Sans Pro;
+    letter-spacing: 0.8px;
+  }
+
+  &__city-bold{
+    color: $color-yellow;
+    font: 600 20px/1.3em Source Sans Pro;
+    letter-spacing: 1.55px;
+  }
+
+  &__block-hours{
+    padding-top: 7px;
+  }
+
+  &__hours-title, &__hours{
+    padding: 0 0 5px 32px;
+    color: $color-gray;
+    font: 600 15px/1.3em Source Sans Pro;
+    letter-spacing: 0.8px;
+  }
+
+  &__hours-bold{
+    color: $color-yellow;
+    font: 600 20px/1.3em Source Sans Pro;
+    letter-spacing: 1.55px;
+  }
+
+  &__block-adress{
+    padding: 13px 0 5px 32px;
+  }
+
+  &__name{
+    color: $color-yellow;
+    font: 600 20px/1.3em Source Sans Pro;
+    letter-spacing: 1.55px;
+  }
+
+  &__adress{
+    color: $color-gray;
+    font: 600 15px/1.3em Source Sans Pro;
+    letter-spacing: 0.8px;
+  }
+}

@@ -15,7 +15,9 @@ html {
   letter-spacing: 1.3px;
   color: #282828;
   overflow: show;
-  background: url(../img/bg.jpg) 50% 100% no-repeat, url(../img/bg_repeat.jpg) 50% 0% repeat-y;
+  background-color: #000;
+  background: url(../img/bg1.jpg) 50% 100% no-repeat, url(../img/bg_repeat.jpg) 50% 0% repeat-y;
+  background-size: 100% auto;
 }
 
 .main {
@@ -555,6 +557,7 @@ html {
 }
 
 .main__product {
+  position: relative;
   padding: 20px 20px;
   text-align: center;
 }
@@ -569,6 +572,39 @@ html {
   color: #fff;
   font: 600 35.8px/1.4em Source Sans Pro;
   letter-spacing: 3px;
+}
+
+.product__bg-olivki, .product__bg-salat, .product__bg-griby, .product__bg-muka, .product__bg-oregano {
+  position: absolute;
+}
+
+.product__bg-olivki {
+  top: 0;
+  left: 22%;
+  z-index: 0;
+}
+
+.product__bg-salat {
+  bottom: 58px;
+  right: -272px;
+  z-index: 0;
+}
+
+.product__bg-salat--l {
+  top: 348px;
+  left: -285px;
+}
+
+.product__bg-griby {
+  top: 120px;
+  left: 46%;
+  z-index: 0;
+}
+
+.product__bg-muka {
+  top: 348px;
+  left: -330px;
+  z-index: 0;
 }
 
 .product__list {
@@ -747,7 +783,7 @@ html {
       -ms-grid-row-align: stretch;
       align-self: stretch;
   background: rgba(0, 0, 0, 0.7);
-  width: 469px;
+  max-width: 469px;
   max-height: 415px;
   border-radius: 0 5px 5px 0;
 }
@@ -780,9 +816,162 @@ html {
 .product-bottom .block-info__button-link {
   margin-left: -32px;
   width: 302px;
-  padding: 12.5px 0;
+  padding: 10px 0;
   color: #fff;
-  font: 600 22.8px/1.3em Source Sans Pro;
+  font: 600 23.8px/1.6em Source Sans Pro;
+  letter-spacing: 1.15px;
   text-transform: uppercase;
+}
+
+.footer {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.footer__list {
+  background: url(/img/footer/footer.png) 0 0 repeat-x;
+  background-size: contain;
+  margin: 94px auto 0 auto;
+  padding: 10px 10px 92px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__item {
+  margin-right: 50px;
+}
+
+.footer__item:nth-child(4) {
+  margin-right: 20px;
+}
+
+.footer-menu__list {
+  list-style-type: none;
+  margin-top: 6px;
+}
+
+.footer-menu__item {
+  margin-bottom: 10px;
+}
+
+.footer-menu__item:nth-child(5) > .footer-menu__link {
+  color: #fcb800;
+}
+
+.footer-menu__link {
+  text-decoration: none;
+  color: #E9E9EA;
+  font: 16px/1.4em Source Sans Pro;
+  letter-spacing: 1.1px;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.footer-menu__link:hover {
+  text-decoration: underline;
+  color: #fcb800;
+}
+
+.card-pay__title {
+  color: #E9E9EA;
+  font: 16px/1.4em Source Sans Pro;
+  letter-spacing: 0.5px;
+  padding: 6px 7px 0 7px;
+}
+
+.card-pay_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  padding: 19px 7px;
+  max-width: 150px;
+}
+
+.card-pay__item {
+  margin: 0 16px 11px 0;
+}
+
+.footer-logo__block-image {
+  padding-left: 83px;
+}
+
+.footer-logo__block-icon {
+  padding: 9px 0 0 111px;
+}
+
+.footer-logo__link {
+  text-decoration: none;
+}
+
+.footer-logo__social {
+  margin-right: 12px;
+}
+
+.footer-info__block-phone {
+  padding: 7px 0 0 72px;
+}
+
+.footer-info__phone {
+  text-decoration: none;
+  color: #fcb800;
+  font: 600 20px/1.3em Source Sans Pro;
+  letter-spacing: 1.55px;
+}
+
+.footer-info__phone-text {
+  padding-top: 2px;
+  color: #E9E9EA;
+  font: 600 15px/1.3em Source Sans Pro;
+  letter-spacing: 0.6px;
+}
+
+.footer-info__city {
+  padding: 20px 0 0 72px;
+  color: #E9E9EA;
+  font: 600 15px/1.3em Source Sans Pro;
+  letter-spacing: 0.8px;
+}
+
+.footer-info__city-bold {
+  color: #fcb800;
+  font: 600 20px/1.3em Source Sans Pro;
+  letter-spacing: 1.55px;
+}
+
+.footer-info__block-hours {
+  padding-top: 7px;
+}
+
+.footer-info__hours-title, .footer-info__hours {
+  padding: 0 0 5px 32px;
+  color: #E9E9EA;
+  font: 600 15px/1.3em Source Sans Pro;
+  letter-spacing: 0.8px;
+}
+
+.footer-info__hours-bold {
+  color: #fcb800;
+  font: 600 20px/1.3em Source Sans Pro;
+  letter-spacing: 1.55px;
+}
+
+.footer-info__block-adress {
+  padding: 13px 0 5px 32px;
+}
+
+.footer-info__name {
+  color: #fcb800;
+  font: 600 20px/1.3em Source Sans Pro;
+  letter-spacing: 1.55px;
+}
+
+.footer-info__adress {
+  color: #E9E9EA;
+  font: 600 15px/1.3em Source Sans Pro;
+  letter-spacing: 0.8px;
 }
 /*# sourceMappingURL=style.css.map */
