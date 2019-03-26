@@ -1,10 +1,39 @@
 .main__product-bottom{
+  position: relative;
   margin-top: 110px;
   padding: 20px 19px;
   text-align: center;
 }
 
 .product-bottom{
+  &__bg-lozhka, &__bg-ogurec, &__bg-pomidor, &__bg-kolos{
+    position: absolute;
+  }
+
+  &__bg-lozhka{
+    top: -72px;
+    left: 18%;
+    z-index: -1;
+  }
+
+  &__bg-ogurec{
+    top: 640px;
+    left: -84px;
+    z-index: -1;
+  }
+
+  &__bg-pomidor{
+    top: 256px;
+    right: -120px;
+    z-index: -1;
+  }
+
+  &__bg-kolos{
+    bottom: -211px;
+    right: -139px;
+    z-index: -1;
+  }
+
   &__title{
     text-align: center;
     color: #fff;
@@ -70,6 +99,70 @@
       font: 600 23.8px/1.6em Source Sans Pro;
       letter-spacing: 1.15px;
       text-transform: uppercase;
+    }
+  }
+
+  @media (max-width: 1298px) {
+    .block-info{
+      &__text{
+        padding: 98px 65px 40px 68px;
+      } 
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .product-bottom{
+      &__list{
+        padding: 31px 10px 0 10px;
+      }
+    }
+
+    .block-info{
+      &__text{
+        padding: 48px 25px 40px 38px;
+      } 
+    }
+  }
+
+  @media (max-width: 768px) {
+    .product-bottom{
+      &__list{
+        padding: 31px 10px 0 10px;
+      }
+
+      &__item{
+        flex-direction: column;
+      }
+
+      &__block-info{
+        margin-top: -5px;
+        max-width: 100%;
+        border-radius: 0 0 5px 5px;
+      }
+    }
+
+    .block-info{
+      &__text{
+        font: 16px/1.65em Source Sans Pro;
+        letter-spacing: 1.2px;
+        padding: 0 0 0 52px;
+
+        &-bold{
+          font: 600 20px/1.3em Source Sans Pro;
+          letter-spacing: 1.2px;
+        }
+      }
+      
+      &__button{
+        padding-bottom: 20px;
+      }
+
+      &__button-link{
+        font: 18px/1.6em Source Sans Pro;
+        width: 550px;
+        margin-left: 0;
+        padding: 0;
+      }
     }
   }
 }

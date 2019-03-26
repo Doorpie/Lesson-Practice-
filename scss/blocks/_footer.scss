@@ -1,11 +1,15 @@
 
 .footer{
-  background: rgba(0, 0, 0, 0.4);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), #000 80%);
+}
+
+@media (max-width: 768px) {
+  .footer{
+    display: none;
+  }
 }
 
 .footer__list{
-  
-  background: url(/img/footer/footer.png) 0 0 repeat-x;
   background-size: contain;
   margin: 94px auto 0 auto;  
   padding: 10px 10px 92px 10px;

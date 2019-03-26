@@ -24,52 +24,75 @@
   &__bg-olivki{
     top: 0;
     left: 22%;
-    z-index: 0;
+    z-index: -1;
   }
 
   &__bg-salat{
     bottom: 58px;
     right: -272px;
-    z-index: 0;
+    z-index: -1;
   }
 
   &__bg-salat--l{
     top: 348px;
     left: -285px;
+    z-index: -1
   }
 
   &__bg-griby{
     top: 120px;
     left: 46%;
-    z-index: 0;
+    z-index: -1;
   }
 
   &__bg-muka{
     top: 348px;
     left: -330px;
-    z-index: 0;
+    z-index: -1;
   }
-
 
   &__list{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 25px 75.5px 0 75.5px;
   }
 
   &__item{
     position: relative;
+    margin-right: 58px;
     margin-bottom: 42px;
-    width: 347px;
-    border: 1px solid black;
-    border-radius: 5px;
+    width: 347px;    
   }
 
+  @media (min-width: 1348px) {
+    &__item:nth-child(3n){
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: 1347px) {
+    &__item{
+      margin-right: 58px;
+    }
+
+    &__item:last-child{
+      margin-right: 0;
+    }
+
+    &__item:nth-child(2n){
+      margin-right: 0;
+    }
+  }
+  
+
   &__block-info{
+    border: 1px solid black;
+    border-radius: 0 0 5px 5px;
     background: rgba(0, 0, 0, 0.7);
     text-align: center;
+    margin-top: -5px;
     padding: 10px 10px 23px 10px;
   }  
   
@@ -99,6 +122,7 @@
   .block-image{
     &__link{
       position: relative;
+      text-decoration: none;
     }
 
     &__icon{
@@ -113,6 +137,8 @@
 
     &__img{
       border-radius: 5px 5px 0 0;
+      max-width: 100%;
+      margin-bottom: 0;
     }
 
     &__weight{
@@ -152,6 +178,10 @@
       padding: 12.5px 0;
       color: #fff;
       font: 600 22.8px/1.3em Source Sans Pro;
+
+      &:hover{
+        color: #292828;
+      }
     
       &:hover > .block-info__button-img{
       display: none;

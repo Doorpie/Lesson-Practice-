@@ -14,8 +14,14 @@ html {
     color: #282828;
     overflow: show;
     background-color: #000;
-    background: url(../img/bg1.jpg) 50% 100% no-repeat, url(../img/bg_repeat.jpg) 50% 0% repeat-y;
+    background: url(../img/bg.jpg) 50% 100% no-repeat, url(../img/bg_repeat.jpg) 50% 0% repeat-y;
     background-size: 100% auto; 
+  }
+
+  @media (max-width: 1400px){
+    .home-page{
+      background: url(../img/bg1.jpg) 50% 100% no-repeat, url(../img/bg_repeat1.jpg) 50% 0% repeat-y;
+    } 
   }
 
 .main{
