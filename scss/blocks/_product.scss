@@ -2,10 +2,12 @@
   position: relative;
   padding: 20px 20px;
   text-align: center;
+  overflow: hidden;
 
   &--sub{
     margin-top: 59px;
     padding-bottom: 60px;
+    overflow: hidden;
   }
 }
 

@@ -576,11 +576,13 @@ html {
   position: relative;
   padding: 20px 20px;
   text-align: center;
+  overflow: hidden;
 }
 
 .main__product--sub {
   margin-top: 59px;
   padding-bottom: 60px;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -925,6 +927,7 @@ html {
   margin-top: 110px;
   padding: 20px 19px;
   text-align: center;
+  overflow: hidden;
 }
 
 @media (max-width: 798px) {
