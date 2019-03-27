@@ -570,6 +570,7 @@ html {
   position: relative;
   padding: 20px 20px;
   text-align: center;
+  overflow: visible;
 }
 
 .main__product--sub {
@@ -887,6 +888,12 @@ html {
   }
   .product .block-info__fast-order {
     padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .product .block-info__button {
+    width: 182px;
   }
 }
 
