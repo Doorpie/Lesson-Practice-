@@ -5,6 +5,13 @@
   text-align: center;
 }
 
+@media (max-width: 798px){
+  .main__product-bottom{
+    margin-top: 10px;
+  }
+
+}
+
 .product-bottom{
   &__bg-lozhka, &__bg-ogurec, &__bg-pomidor, &__bg-kolos{
     position: absolute;
@@ -61,6 +68,15 @@
     max-width: 469px;
     max-height: 415px;
     border-radius: 0 5px 5px 0;
+  }
+
+  @media (max-width: 768px) {
+    .product-bottom{
+      &__title{
+        font-size: 20px;
+        letter-spacing: 1.6px;    
+      }
+    }
   }
 
   .block-image{
@@ -132,20 +148,28 @@
 
       &__item{
         flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
       }
 
       &__block-info{
-        margin-top: -5px;
-        max-width: 100%;
+        margin: -5px 0 0 0;
+        max-width: 691px;
         border-radius: 0 0 5px 5px;
       }
     }
 
+    .block-image{
+      &__icon-img{
+        width: 39px;
+      }
+    }
+    
     .block-info{
       &__text{
         font: 16px/1.3em Source Sans Pro;
         letter-spacing: 1.2px;
-        padding: 0 10px;
+        padding: 10px;
         text-align: center;
 
         &-bold{
@@ -162,7 +186,7 @@
         font: 18px/1.6em Source Sans Pro;
         width: 90%;
         margin-left: 0;
-        padding: 0;
+        padding: 10px 0;
       }
     }
   }

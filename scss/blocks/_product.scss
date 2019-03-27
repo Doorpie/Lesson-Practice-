@@ -9,14 +9,16 @@
   }
 }
 
-.product{
-  &__title{
-    text-align: center;
-    color: #fff;
-    font: 600 35.8px/1.4em Source Sans Pro;
-    letter-spacing: 3px;
-  }
+@media (max-width: 768px) {
+  .main__product{
+      &--sub{
+        margin-top: 20px;
+        padding-bottom: 60px;
+      }
+    }
+}
 
+.product{
   &__bg-olivki, &__bg-salat, &__bg-griby, &__bg-muka, &__bg-oregano{
     position: absolute;
   }
@@ -51,6 +53,13 @@
     z-index: -1;
   }
 
+  &__title{
+    text-align: center;
+    color: #fff;
+    font: 600 35.8px/1.4em Source Sans Pro;
+    letter-spacing: 3px;
+  }
+
   &__list{
     display: flex;
     flex-flow: row wrap;
@@ -65,27 +74,6 @@
     margin-bottom: 42px;
     width: 347px;    
   }
-
-  @media (min-width: 1348px) {
-    &__item:nth-child(3n){
-      margin-right: 0;
-    }
-  }
-
-  @media (max-width: 1347px) {
-    &__item{
-      margin-right: 58px;
-    }
-
-    &__item:last-child{
-      margin-right: 0;
-    }
-
-    &__item:nth-child(2n){
-      margin-right: 0;
-    }
-  }
-  
 
   &__block-info{
     border: 1px solid black;
@@ -116,6 +104,78 @@
 
     &:hover::after{
       display: none;
+    }
+  }
+
+  @media (min-width: 1348px) {
+    .product{
+      &__item:nth-child(3n){
+        margin-right: 0;
+      }
+    }
+  }
+
+  @media (max-width: 1347px) {
+    &__item{
+      margin-right: 58px;
+    }
+
+    &__item:last-child{
+      margin-right: 0;
+    }
+
+    &__item:nth-child(2n){
+      margin-right: 0;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .product{
+      &__title{
+       font-size: 20px;
+       letter-spacing: 1.3px;
+      }
+
+      &__list{
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px 0 0 0;
+      }
+
+      &__item{
+        width: 100%;
+        min-height: 220px;
+        margin: 0px 0 20px 0;
+      }
+
+      &__block{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+      }
+
+      &__block-image{
+        position: absolute;
+        
+        width: 213px;
+        height: 185px;
+        top: 25px;
+        left: -85px;  
+      }
+
+      &__block-info{
+        border: 0;
+        border-radius: 0;
+        width: 100%;
+        padding: 16px 17px 10px 141px;
+        text-align: left;
+        background: #FCFCFC;
+      }
+      
+      &__more-products{
+        font-size: 19px;
+      }
     }
   }
 
@@ -154,6 +214,21 @@
     }
   }
 
+  @media (max-width: 768px) {
+    .block-image{
+      &__icon{
+        display: none;
+      }
+
+      &__weight{
+        font-size: 12px;
+        padding: 2px 4px;
+        left: 103px;
+        bottom: 30px;
+      }
+    } 
+  }
+
   .block-info{
     &__type{
       color: #fff;
@@ -164,6 +239,10 @@
     &__name{
       color:$color-yellow;
       font: 600 24px/1.3em Source Sans Pro;
+    }
+
+    &__text{
+      display: none;
     }
 
     &__buy{
@@ -202,12 +281,82 @@
     }
   }
 
+  @media (max-width: 768px) {
+    .block-info{
+      &__type{
+        display: none;
+      }
+
+      &__name{
+        font-size: 18px;
+        font-weight: 700;
+        color: #282828;
+      }
+
+      &__text{
+        display: block;
+      }
+
+      &__buy{
+        padding: 20px 0 5px 0;
+      }
+
+      &__button{
+        width: 202px;
+        color: #282828;
+        background: $color-yellow;
+        font-size: 16px;
+
+        &:hover{
+          color: #fff;
+        }
+      
+        &:hover > .block-info__button-img{
+        display: inline-block;
+        
+        }
+  
+        &:hover > .block-info__button-img--active{
+          display: none;
+        }
+      }
+
+      &__button-img{
+        display: none;
+      }
+
+      &__button-img--active{
+        display: inline-block;
+      }
+
+      &__button-img{
+        width: 22px;
+        margin-left: 10px;
+      }
+
+      &__fast-order{
+        padding-bottom: 10px;
+      }
+    } 
+  }
+
   .fast-order__links{
     color: #fff;
     font: 17.4px/1.3em Source Sans Pro;
 
     &:hover{
       text-decoration: none;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .fast-order{
+      &__links{
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.6px;
+        color: #282828;
+      }
     }
   }
 }
