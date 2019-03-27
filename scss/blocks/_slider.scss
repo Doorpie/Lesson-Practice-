@@ -94,7 +94,7 @@
     }
   }
 
-  @media (max-width: 325px) {
+  @media (max-width: 425px) {
     .slider{
       &__title{
         font-size: 16px;
@@ -103,6 +103,12 @@
 
       &__text{
         font-size: 12px;
+      }
+
+      &__button{
+        font-size: 16px;
+        margin-top: 5px;
+        padding: 10.5px 65px;
       }
     }
   }
