@@ -897,7 +897,7 @@ html {
 
 @media (max-width: 425px) {
   .product .block-info__button {
-    width: 182px;
+    width: 100%;
   }
 }
 
