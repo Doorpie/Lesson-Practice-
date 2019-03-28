@@ -14,16 +14,14 @@ html {
   font-family: 'Source Sans Pro', 'sans-serif';
   letter-spacing: 1.3px;
   color: #282828;
-  overflow: show;
   background-color: #000;
   background: url(../img/bg.jpg) 50% 100% no-repeat, url(../img/bg_repeat.jpg) 50% 0% repeat-y;
-  overflow-x: hidden;
+  background-size: 100% auto;
 }
 
 @media (max-width: 1400px) {
   .home-page {
     background: url(../img/bg1.jpg) 50% 100% no-repeat, url(../img/bg_repeat1.jpg) 50% 0% repeat-y;
-    background-size: 100% auto;
   }
 }
 
@@ -56,6 +54,7 @@ html {
 .wrap {
   max-width: 1400px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 @media (max-width: 1199px) {
@@ -576,13 +575,11 @@ html {
   position: relative;
   padding: 20px 20px;
   text-align: center;
-  overflow: hidden;
 }
 
 .main__product--sub {
   margin-top: 59px;
   padding-bottom: 60px;
-  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -927,7 +924,6 @@ html {
   margin-top: 110px;
   padding: 20px 19px;
   text-align: center;
-  overflow: hidden;
 }
 
 @media (max-width: 798px) {
