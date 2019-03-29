@@ -18,6 +18,12 @@
     }
 }
 
+@media (max-width: 425px) {
+  .main__product{
+    padding: 20px 0;
+  }
+}
+
 .product{
   &__bg-olivki, &__bg-salat, &__bg-griby, &__bg-muka, &__bg-oregano{
     position: absolute;
@@ -107,28 +113,6 @@
     }
   }
 
-  @media (min-width: 1348px) {
-    .product{
-      &__item:nth-child(3n){
-        margin-right: 0;
-      }
-    }
-  }
-
-  @media (max-width: 1347px) {
-    &__item{
-      margin-right: 58px;
-    }
-
-    &__item:last-child{
-      margin-right: 0;
-    }
-
-    &__item:nth-child(2n){
-      margin-right: 0;
-    }
-  }
-  
   @media (max-width: 768px) {
     .product{
       &__title{
@@ -143,7 +127,7 @@
       }
 
       &__item{
-        width: 100%;
+        flex-basis: 100%;
         min-height: 220px;
         margin: 0px 0 20px 0;
       }
@@ -179,6 +163,40 @@
     }
   }
 
+  @media (max-width: 884px) {
+    .product{
+      &__item{
+        margin-right: 0;
+      }
+    }
+  }
+
+  @media (min-width: 949px) and (max-width: 1295px) {
+    .product{
+      &__item:nth-child(2n){
+      margin-right: 0;
+      }
+    }
+  }
+
+  @media (min-width: 1313px) {
+    .product{
+      &__item:nth-child(3n){
+        margin-right: 0;
+      }
+    }
+  }
+
+  @media (max-width: 1365px) {
+    &__item{
+      margin-right: 32px;
+    }
+
+    &__item:last-child{
+      margin-right: 0;
+    } 
+  }
+  
   .block-image{
     &__link{
       position: relative;

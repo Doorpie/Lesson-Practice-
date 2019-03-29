@@ -17,7 +17,8 @@
 
 @media (max-width: 768px) {
   .main__slider{
-    background: url(../img/slider/slider_bg2.jpg) no-repeat;
+    height: 250px;  
+    background: url(../img/slider/slider_bg2.jpg) 0 no-repeat;
     padding: 20px 34px;
     background-size: 100%;
   }
@@ -67,6 +68,14 @@
     .slider{
       &__bazilik{
         display: none;
+      }
+
+      &__title{
+        font-size: 30px;
+      }
+    
+      &__text{
+        font-size: 15px;
       }
 
       &__button{
