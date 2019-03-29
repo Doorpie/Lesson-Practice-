@@ -121,8 +121,27 @@
   @media (max-width: 1298px) {
     .block-info{
       &__text{
-        padding: 98px 65px 40px 68px;
+        padding: 20% 10% 10% 10%;
       } 
+    }
+  }
+  
+  @media (max-width: 1199px) {
+    .block-info{
+      &__text{
+        font-size: 18px;
+      
+        &-bold{
+          color: $color-yellow;
+          font-size: 20px;
+        }
+      }
+
+      &__button-link{
+        margin-left: 0;
+        width: 80%;
+        font-size: 20px;
+      }
     }
   }
 
@@ -135,12 +154,15 @@
 
     .block-info{
       &__text{
-        padding: 48px 25px 40px 38px;
+        &-bold{
+          color: $color-yellow;
+          font-size: 26px;
+        }
       } 
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 786px) {
     .product-bottom{
       &__list{
         padding: 31px 10px 0 10px;

@@ -18,12 +18,16 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1362px) {
   .footer{
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), #000 80%);
 
+    &__list{
+      justify-content: center;
+    }
+
     &__item{
-      margin-right: 5px;
+      margin-right: 0.5%;
 
       &:nth-child(4){
         margin-right: 0;
@@ -32,7 +36,7 @@
   } 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 956px) {
   .footer{
     background: 0;
 
@@ -72,7 +76,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1362px) {
   .footer-menu{
     &__list{
       padding: 0 7px;
@@ -85,7 +89,7 @@
   } 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 956px) {
   .footer-menu{
     &__item{
       max-width: none;
@@ -114,7 +118,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1362px) {
   .card-pay{
     &__title{
       padding: 6px 0 0 10px;
@@ -133,7 +137,7 @@
   } 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 956px) {
   .card-pay{
     &__title{
       padding: 6px 0 0 10px;
@@ -175,7 +179,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1362px) {
   .footer-logo{
     &__block-image{
       padding-left: 10px;
@@ -187,7 +191,7 @@
   } 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 956px) {
   .footer-logo{
     display: none;
   } 
@@ -259,7 +263,7 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1362px) {
   .footer-info{
     &__block-phone{
       padding: 7px 0 0 32px;
@@ -271,7 +275,7 @@
   } 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 956px) {
   .footer-info{
     &__city{
       display: none;
