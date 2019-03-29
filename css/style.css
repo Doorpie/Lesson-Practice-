@@ -973,7 +973,7 @@ html {
 }
 
 .product-bottom__bg-ogurec {
-  top: 640px;
+  top: 540px;
   left: -84px;
   z-index: -1;
 }
@@ -1183,7 +1183,8 @@ html {
 
 @media (max-width: 956px) {
   .footer {
-    background: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), color-stop(90%, #000));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), #000 90%);
   }
   .footer__list {
     -webkit-box-orient: vertical;
