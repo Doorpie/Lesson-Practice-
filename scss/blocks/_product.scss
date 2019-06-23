@@ -9,6 +9,15 @@
   }
 }
 
+@media (max-width: 1400px) {
+  .main__product{
+    overflow: hidden;
+      &--sub{
+        overflow: hidden;
+      }
+    }
+}
+
 @media (max-width: 948px) {
   .main__product{
       &--sub{

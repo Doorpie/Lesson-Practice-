@@ -47,6 +47,7 @@
   }
 
   &__basket-bonus{
+    position: relative;
     padding-top: 2px;
     margin-right: 31px;
   }
@@ -170,13 +171,54 @@
   }
 }
 
-.basket-bonus__basket{
-  display: block;
-  position: relative;
-  text-decoration: none;
-  color: $color-gray;
-  font: lighter 15px/1.4em Source Sans Pro;
+.basket-bonus{
+  &__basket{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    color: $color-gray;
+    font: lighter 15px/1.4em Source Sans Pro;
+  }
+
+  &__bonus-show{
+    position: absolute;
+    top: 25px;
+    left: -240px;
+    background: #fff;
+    text-align: center;
+    font: 400 16px/1.2em Source Sans Pro;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+
+    &::after{
+      content: '';
+      border: 8px solid transparent;
+      border-left: 4px solid white;
+      position: absolute;
+      top: 15px;
+      right: -12px;
+    }
+  }
 }
+
+.bonus-show{
+  &__num{
+    color: $color-yellow;
+    font-size: 22px;
+  }
+
+  &__clear{
+    font-size: 20px;
+    display: block;
+    color: $color-yellow;
+    text-decoration: none;
+    margin-top: 5px;
+    letter-spacing: 1px;
+  }
+}
+
+
 
 @media (max-width: 992px ) {
   .basket-bonus__basket{
