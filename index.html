@@ -5,9 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" product="ie=edge">
-  <title>nasha-pizza</title>
+  <!-- Add Slick Slider CSS -->
+  <link rel="stylesheet" href="./slick/slick.css">
+  <link rel="stylesheet" href="./slick/slick-theme.css">
+
+  <!-- Add main css -->
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Add font -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <title>nasha-pizza</title>
 </head>
 
 <body class="home-page">
@@ -38,15 +44,20 @@
               <span class="basket__number">0</span>
               <div class="basket__text">Корзина<br> пуста</div>
             </a>
-            <div class="bonus-show basket-bonus__bonus-show">
-              <span class="bonus-show__num">0</span>
+            <div class="basket-show basket-bonus__basket-show">
+              <span class="basket-show__num">0</span>
               наименование
               <br>
-              на сумму 
+              на сумму
               <br>
-              <span class="bonus-show__num">0</span>
+              <span class="basket-show__num">0</span>
               руб.
-              <a href="#" class="bonus-show__clear">Очистить</a>
+              <a href="#" class="basket-show__clear">Очистить</a>
+            </div>
+            <div class="bonus-show basket-bonus__bonus-show">
+              Сделайте заказ,
+              чтобы получить
+              бонусы
             </div>
             <div class="bonus basket-bonus__bonus">
               <a href="#" class="bonus__text">
@@ -54,6 +65,7 @@
                 бонусных баллов
               </a>
             </div>
+
           </div>
           <div class="account header-top__account">
             <a href="#" class="account__link">
@@ -162,7 +174,8 @@
               <div class="block-info product__block-info">
                 <div class="block-info__type">Пицца</div>
                 <div class="block-info__name">"Чикен-Рэнч"</div>
-                <div class="block-info__text">сыр моцарелла, пармезан, курица, бекон, томаты, шампиньоны, соус рэнч</div>
+                <div class="block-info__text">сыр моцарелла, пармезан, курица, бекон, томаты, шампиньоны, соус рэнч
+                </div>
                 <div class="block-info__buy">
                   <a href="#" class="btn block-info__button">19.80 руб.
                     <img src="./img/product/add_cart.png" alt="add_cart_hover" class="block-info__button-img">
@@ -190,7 +203,8 @@
               <div class="block-info product__block-info">
                 <div class="block-info__type">Пицца</div>
                 <div class="block-info__name">"Мясное удовольствие"</div>
-                <div class="block-info__text">сыр, курица, буженина, говядина, бекон, ветчина, томаты, перец сладкий</div>
+                <div class="block-info__text">сыр, курица, буженина, говядина, бекон, ветчина, томаты, перец сладкий
+                </div>
                 <div class="block-info__buy">
                   <a href="#" class="btn block-info__button">22.50 руб.
                     <img src="./img/product/add_cart.png" alt="add_cart_hover" class="block-info__button-img">
@@ -275,7 +289,8 @@
               <div class="block-info product__block-info">
                 <div class="block-info__type">Пицца</div>
                 <div class="block-info__name">"Пепперони с курочкой"</div>
-                <div class="block-info__text">сыр моцарелла, пармезан, колбаска пепперони, курица, соус сладкий чили</div>
+                <div class="block-info__text">сыр моцарелла, пармезан, колбаска пепперони, курица, соус сладкий чили
+                </div>
                 <div class="block-info__buy">
                   <a href="#" class="btn block-info__button">20.80 руб.
                     <img src="./img/product/add_cart.png" alt="add_cart_hover" class="block-info__button-img">
@@ -546,13 +561,22 @@
           </div>
           <div class="footer-info__block-adress">
             <div class="footer-info__name">Бар “BROOKLYN”</div>
-            <div class="footer-info__adress">г. Брест, ул. Пушкинская 23</div>
+            <div class="footer-info__adress">г. Брест, ул. Иванова 63</div>
           </div>
         </div>
       </div>
     </div>
   </footer>
   <!-- /.footer -->
+
+  <!-- Add jq -->
+  <script src="./js/jquery-3.4.1.min.js"></script>
+
+  <!-- Add libJS Slick Slider -->
+  <script src="./slick/slick.min.js"></script>
+
+  <!-- Add script -->
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

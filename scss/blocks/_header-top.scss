@@ -77,6 +77,8 @@
   }  
 }
 
+// .header__top - .call-order
+
 .call-order{
   &__phone-link{
     text-decoration: none;
@@ -119,6 +121,9 @@
     }
   }
 }
+
+// /.header__top - .call-order
+//.header__top - .working-hours
 
 .working-hours{
   &__top{
@@ -171,6 +176,9 @@
   }
 }
 
+// /.header__top - .working-hours
+// .header__top - .basket-bonus
+
 .basket-bonus{
   &__basket{
     display: block;
@@ -180,16 +188,40 @@
     font: lighter 15px/1.4em Source Sans Pro;
   }
 
-  &__bonus-show{
+  &__basket-show{
+    display: none;
     position: absolute;
-    top: 25px;
-    left: -240px;
+    top: 5px;
+    left: -220px;
     background: #fff;
     text-align: center;
     font: 400 16px/1.2em Source Sans Pro;
-    padding: 20px;
+    padding: 15px 10px;
     border-radius: 10px;
-    z-index: 1000;
+    z-index: 100;
+
+    &::after{
+      content: '';
+      border: 8px solid transparent;
+      border-left: 4px solid white;
+      position: absolute;
+      top: 15px;
+      right: -12px;
+    }
+  }
+
+  &__bonus-show{
+    display: none;
+    position: absolute;
+    top: 34px;
+    left: -225px;
+    background: #fff;
+    font: 400 16px/1.2em Source Sans Pro;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 150px;
+    padding: 5px;
+    z-index: 100;
 
     &::after{
       content: '';
@@ -202,7 +234,7 @@
   }
 }
 
-.bonus-show{
+.basket-show{
   &__num{
     color: $color-yellow;
     font-size: 22px;
@@ -217,8 +249,6 @@
     letter-spacing: 1px;
   }
 }
-
-
 
 @media (max-width: 992px ) {
   .basket-bonus__basket{
@@ -247,10 +277,6 @@
     left: -49px;
     padding-left: 2px;
     border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-    -ms-border-radius: 100px;
-    -o-border-radius: 100px;
   }
 
   &__text{
