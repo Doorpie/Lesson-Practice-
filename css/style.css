@@ -1595,7 +1595,7 @@ html {
   position: fixed;
   top: 130px;
   left: 50%;
-  min-width: 300px;
+  width: 350px;
   min-height: 390px;
   padding: 15px;
   -webkit-transform: translateX(-50%);
@@ -1705,7 +1705,7 @@ html {
   position: fixed;
   top: 130px;
   left: 50%;
-  min-width: 300px;
+  width: 350px;
   min-height: 350px;
   padding: 15px;
   -webkit-transform: translateX(-50%);
@@ -1713,6 +1713,14 @@ html {
   background: #fff;
   border-radius: 5px;
   z-index: 4;
+}
+
+@media (max-width: 768px) {
+  .account-modul .account-modul__popup {
+    top: 5%;
+    width: 0;
+    min-width: 300px;
+  }
 }
 
 .account-modul__reg {
