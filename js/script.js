@@ -72,7 +72,7 @@ $(document).ready(function(){
          }
     });
     
-    // popup
+    // popup call-order
      //open
 
     $('.call-order__text-link').on('click', function(){
@@ -87,6 +87,19 @@ $(document).ready(function(){
         $('.call-order-modul__overlay').hide();
         $('.call-order-modul__popup').hide();
     });
-      
 
+    //popup account
+        //oprn
+
+    $('.account__link').on('click', function(){
+        $('.account-modul__overlay').show();
+        $('.account-modul__popup').show();
+    });
+
+        //close
+      
+        $('.popup__close').on('click', function(){
+            $('.account-modul__overlay').hide();
+            $('.account-modul__popup').hide();
+        });
 });

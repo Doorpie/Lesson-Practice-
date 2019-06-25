@@ -16,7 +16,7 @@
         position: fixed;
         top: 130px;
         left: 50%;
-        width: 380px;
+        min-width: 300px;
         min-height: 390px;
         padding: 15px;
         transform: translateX(-50%);
@@ -69,6 +69,7 @@
             border-radius: 5px;
             border: 1px solid $color-yellow;
             margin-bottom: 10px;
+            padding: 4px 11px;
 
             &:focus{
                 outline: none;
@@ -105,6 +106,139 @@
                     border: none;
                     background: $color-yellow;
                 }
+            }
+        }
+    }
+}
+
+.account-modul{
+    &__overlay{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+        background: #0b0b0b;
+        opacity: 0.8;
+    }
+
+    &__popup{
+        display: none;
+        position: fixed;
+        top: 130px;
+        left: 50%;
+        min-width: 300px;
+        min-height: 350px;
+        padding: 15px;
+        transform: translateX(-50%);
+        background: #fff;
+        border-radius: 5px;
+        z-index: 4;
+    }
+
+    &__reg{
+        margin-top: 0;
+    }
+
+    &__reg-link{
+        text-decoration: none;
+        color: #282828;
+        font: 400 15px/1.2em Source Sans Pro;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    .popup{
+        &__close{
+            position: absolute;
+            top: 0;
+            right: 10px;
+            font-size: 35px;
+            font-weight: 300;
+            color: #000;
+            cursor: pointer;
+        }
+
+        &__title{
+            display: block;
+            margin-top: 25px;
+            width: 100%;
+            color: #282828;
+            font: 600 18px/1.2em Source Sans Pro;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        &__form-wrap{
+            margin-top: 20px;
+        }
+    }
+
+    .popup-form{
+        &__label{
+            display: block;
+            width: 100%;
+            margin-bottom: 5px;
+            font: 400 13px/1.2em Source Sans Pro;
+
+            &-i{
+                color: red;
+            }
+        }
+
+        &__input{
+            display: block;
+            width: 100%;
+            height: 35px;
+            border-radius: 5px;
+            border: 1px solid $color-yellow;
+            margin-bottom: 10px;
+            padding: 4px 11px;
+
+            &:focus{
+                outline: none;
+                box-shadow: 0px 0px 5px $color-yellow;
+            }
+        }
+
+        &__sms{
+            text-align: center;
+            margin-top: -5px;
+            margin-bottom: 20px;
+        }
+
+        &__sms-link{
+            color: #282828;
+            font: 400 16px/1.2em Source Sans Pro;
+
+            &:hover{
+                text-decoration: none;
+            }
+        }
+
+        &__buttons{
+            margin-top: 15px;
+        }
+
+        &__btn{
+            display: block;
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            background: $color-yellow;
+            border: none;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font: 400 18px/1.2em Source Sans Pro;
+            transition: all 0.2s linear;
+
+            &:hover{
+                background: #fff;
+                border: 2px solid $color-yellow;
             }
         }
     }
