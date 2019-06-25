@@ -70,7 +70,23 @@ $(document).ready(function(){
                 $('.basket-bonus__basket-show').hide();
             });
          }
-    });                
+    });
+    
+    // popup
+     //open
+
+    $('.call-order__text-link').on('click', function(){
+        $('.call-order-modul__overlay').show();
+        $('.call-order-modul__popup').show();
+
+    });
+
+    // close
+
+    $('.popup__close, .popup-form__btn--close').on('click', function(){
+        $('.call-order-modul__overlay').hide();
+        $('.call-order-modul__popup').hide();
+    });
       
 
 });

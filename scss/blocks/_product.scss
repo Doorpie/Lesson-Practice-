@@ -124,6 +124,13 @@
     bottom: 0;
     opacity: 1;
   }
+
+  @media (max-width: 948px) {
+    &__block-image:hover ~ &__block-composition{
+      bottom: -300px;
+      opacity: 0;
+    }
+  }
   
   &__more-products{
     display: inline-block;

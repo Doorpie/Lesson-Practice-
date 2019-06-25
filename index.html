@@ -25,6 +25,32 @@
             <a href="tel:(8000) 054-05-04" class="call-order__phone-link">(8000) 054-05-04</a>
             <a href="#" class="call-order__text-link">Заказать звонок</a>
           </div>
+          <div class="call-order-modul header-top__call-order-modul">
+            <div class="call-order-modul__overlay"></div>
+            <div class="popup call-order-modul__popup">
+              <!-- /.call-order-modul__overlay -->
+              <div class="popup__title">ЗАКАЗАТЬ ЗВОНОК</div>
+              <!-- /.popup__title -->
+              <div class="popup__close">&times;</div>
+              <!-- /.popup__close -->
+              <div class="popup__form-wrap">
+                <form action="#" class="popup-form popup__form">
+                  <label for="name" class="popup-form__label">Имя<i class="popup-form__label-i">*</i>
+                  </label>
+                  <input type="text" class="popup-form__input" name="name" required>
+                  <label for="phone" class="popup-form__label">Телефон<i class="popup-form__label-i">*</i>
+                  </label>
+                  <input type="tel" name="phone" class="popup-form__input" required>
+                  <div class="popup-form__buttons">
+                      <button class="popup-form__btn">Подтвердить</button>
+                      <button class="popup-form__btn popup-form__btn--close">Отменить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- /.popup call-order-modul__popup -->
+          </div>
+          <!-- /.call-order-modul header-top__call-order-modul -->
           <div class="working-hours header-top__working-hours">
             <div class="working-hours__top">Работаем для вас</div>
             <div class="working-hours__bottom">с
@@ -149,22 +175,22 @@
       <section class="slider main__slider">
         <img src="./img/slider/bazilik.png" alt="bazilik" class="slider__bazilik">
         <div class="slider__wrap">
-              <div class="slider__item">
-                  <img src="./img/slider/slider_bg1.jpg" alt="pizza" class="slider__img1">
-                  <div class="slider__info">
-                      <div class="slider__title">Бонусная программа "Наша пицца":<br>возвращаем 10% от заказа</div>
-                      <div class="slider__text">Копи баллы - и заказывай дешевле.</div>
-                      <a href="#" class="btn slider__button">Условия</a>  
-                  </div>
-              </div>
-              <div class="slider__item">
-                  <img src="./img/slider/slider_bg3.jpg" alt="pizza" class="slider__img2">
-                  <div class="slider__info">
-                      <div class="slider__title">Не можешь выбрать <br> между двумя пиццами? </div>
-                      <div class="slider__text">Просто закажи одну из двух разных половинок!</div>
-                      <a href="#" class="btn slider__button">Условия</a>  
-                  </div>
-              </div>
+          <div class="slider__item">
+            <img src="./img/slider/slider_bg1.jpg" alt="pizza" class="slider__img1">
+            <div class="slider__info">
+              <div class="slider__title">Бонусная программа "Наша пицца":<br>возвращаем 10% от заказа</div>
+              <div class="slider__text">Копи баллы - и заказывай дешевле.</div>
+              <a href="#" class="btn slider__button">Условия</a>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img src="./img/slider/slider_bg3.jpg" alt="pizza" class="slider__img2">
+            <div class="slider__info">
+              <div class="slider__title">Не можешь выбрать <br> между двумя пиццами? </div>
+              <div class="slider__text">Просто закажи одну из двух разных половинок!</div>
+              <a href="#" class="btn slider__button">Условия</a>
+            </div>
+          </div>
         </div>
       </section>
       <!-- /.main__slider -->
@@ -563,26 +589,26 @@
       </section>
       <!-- /.main__product -->
       <section class="slider main__slider">
-          <img src="./img/slider/bazilik.png" alt="bazilik" class="slider__bazilik">
-          <div class="slider__wrap">
-                <div class="slider__item">
-                    <img src="./img/slider/slider_bg1.jpg" alt="pizza" class="slider__img1">
-                    <div class="slider__info">
-                        <div class="slider__title">Бонусная программа "Наша пицца":<br>возвращаем 10% от заказа</div>
-                        <div class="slider__text">Копи баллы - и заказывай дешевле.</div>
-                        <a href="#" class="btn slider__button">Условия</a>  
-                    </div>
-                </div>
-                <div class="slider__item">
-                    <img src="./img/slider/slider_bg3.jpg" alt="pizza" class="slider__img2">
-                    <div class="slider__info">
-                        <div class="slider__title">Не можешь выбрать <br> между двумя пиццами? </div>
-                        <div class="slider__text">Просто закажи одну из двух разных половинок!</div>
-                        <a href="#" class="btn slider__button">Условия</a>  
-                    </div>
-                </div>
+        <img src="./img/slider/bazilik.png" alt="bazilik" class="slider__bazilik">
+        <div class="slider__wrap">
+          <div class="slider__item">
+            <img src="./img/slider/slider_bg1.jpg" alt="pizza" class="slider__img1">
+            <div class="slider__info">
+              <div class="slider__title">Бонусная программа "Наша пицца":<br>возвращаем 10% от заказа</div>
+              <div class="slider__text">Копи баллы - и заказывай дешевле.</div>
+              <a href="#" class="btn slider__button">Условия</a>
+            </div>
           </div>
-        </section>
+          <div class="slider__item">
+            <img src="./img/slider/slider_bg3.jpg" alt="pizza" class="slider__img2">
+            <div class="slider__info">
+              <div class="slider__title">Не можешь выбрать <br> между двумя пиццами? </div>
+              <div class="slider__text">Просто закажи одну из двух разных половинок!</div>
+              <a href="#" class="btn slider__button">Условия</a>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- /.main__slider -->
       <section class="product-bottom main__product-bottom">
         <img src="./img/product-bottom/lozhka.png" alt="lozhka" class="product-bottom__bg-lozhka">
